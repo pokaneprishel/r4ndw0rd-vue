@@ -144,7 +144,7 @@ export default {
 
 <style lang="scss">
 // Импорт стилизованных шрифтов
-@import url(./assets/styles/fonts/fonts.css);
+@import url(./assets/styles/fonts/fonts.scss);
 
 // Глобальные стилизация
 #app {
