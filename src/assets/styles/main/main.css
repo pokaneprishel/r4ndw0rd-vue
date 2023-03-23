@@ -1,0 +1,166 @@
+#app {
+  min-height: 100vh;
+  background: linear-gradient(90deg, #7eb0d7, #0c3c98);
+  font-family: "Ubuntu Mono", monospace;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(375px, 800px));
+  grid-template-rows: 21vh 17vh 6vh 52vh;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+.wrapper h1 {
+  text-align: center;
+}
+
+.create-btn {
+  width: -moz-max-content;
+  width: max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background: white;
+  box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.password-input {
+  width: 40rem;
+  height: 100px;
+  background: white;
+  box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  color: black;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 30px;
+}
+
+.check-bar {
+  display: grid;
+  grid-template-columns: repeat(1, max-content);
+  grid-template-rows: repeat(4, max-content);
+  row-gap: 2vh;
+  align-items: center;
+  justify-items: start;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.checkbox {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-items: center;
+  background-color: white;
+  border-radius: 20px;
+  border: none;
+  width: -moz-max-content;
+  width: max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 12px;
+  box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.2);
+}
+.checkbox h6 {
+  color: black;
+  font-size: 0.8rem;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+.checkbox input[type=checkbox] {
+  border-radius: 5px;
+  border: 1px #8a9597 solid;
+}
+.checkbox input[type=checkbox]:before {
+  background: linear-gradient(90deg, #567599, #1f2e4b);
+}
+.checkbox input[type=number] {
+  border-radius: 5px;
+  border: 1px #8a9597 solid;
+  width: 50px;
+  height: 3vh;
+  padding: 3px;
+}
+
+.password-box {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-items: center;
+  -moz-column-gap: 2vh;
+       column-gap: 2vh;
+}
+.password-box img {
+  max-width: 2rem;
+  height: auto;
+}
+.password-box .scale-up {
+  transition: transform 0.3s ease-in-out;
+}
+.password-box .scale-up:hover,
+.password-box .scale-up:focus {
+  transform: scale(1.2);
+}
+
+header {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-items: center;
+  background: black;
+}
+
+footer {
+  display: grid;
+  grid-auto-flow: row;
+  align-items: center;
+  justify-items: start;
+  row-gap: 10px;
+  background: black;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  padding-left: 2vw;
+}
+footer h6 {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 992px) {
+  .password-input {
+    width: 70vw;
+    height: 8vh;
+  }
+  h1 {
+    font-size: 2.1rem !important;
+    font-weight: 700 !important;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 510px) {
+  h1 {
+    font-size: 1.6rem !important;
+    font-weight: 700 !important;
+  }
+  h3 {
+    font-size: 1.1rem !important;
+    font-weight: 700 !important;
+  }
+  .password-box img {
+    max-width: 1rem;
+  }
+  .checkbox {
+    padding: 6px;
+  }
+}/*# sourceMappingURL=main.css.map */
