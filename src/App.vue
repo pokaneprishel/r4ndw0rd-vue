@@ -327,7 +327,7 @@ footer {
   }
 
   h1 {
-    font-size: 2.4rem;
+    font-size: 2.4rem !important;
     padding: 10px;
   }
 }
@@ -335,7 +335,7 @@ footer {
 // Адаптив для мобильных устройств
 @media screen and (max-width: 510px) {
   h1 {
-    font-size: 2.1rem;
+    font-size: 2.1rem !important;
   }
 }
 
