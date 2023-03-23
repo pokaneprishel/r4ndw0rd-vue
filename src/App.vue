@@ -12,7 +12,7 @@
     <!-- Сетка приложения -->
     <div class="wrapper">
       <!-- Заголовок -->
-      <h1 ref="title">Create strong passwords quickly and easily</h1>
+      <h1 ref="title text-5xl">Create strong passwords quickly and easily</h1>
       <!-- Инпут для генерации пароля -->
       <section class="password-box">
         <input type="text" class="password-input" v-model="password" readonly />
@@ -144,7 +144,7 @@ export default {
 
 <style lang="scss">
 // Импорт стилизованных шрифтов
-@import url(./assets/styles/fonts/fonts.scss);
+@import url(./assets/styles/fonts/fonts.css);
 
 // Глобальные стилизация
 #app {
