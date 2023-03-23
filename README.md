@@ -1,24 +1,20 @@
-# randword-vue
+# 🚀 R4ndw0rd - генератор паролей
 
-## Project setup
-```
-npm install
-```
+Это простое приложение для генерации паролей, построенное с использованием Vue 3, Webpack, Babel и GSAP.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## 🛤 ROADMAP
 
-### Compiles and minifies for production
-```
-npm run build
-```
+1. Рефакторинг кода
+2. Доработка верстки
+3. Доработка дизайна
 
-### Lints and fixes files
-```
-npm run lint
-```
+## 🛠️ Используемые технологии
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- Vue 3
+- Webpack
+- Babel
+- GSAP
+
+## 👨‍💻 Авторы
+[Danil Mazitov](https://github.com/pokaneprishel) - UI/UX, верстка, логика, архитектура.
+
