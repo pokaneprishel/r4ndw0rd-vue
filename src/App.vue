@@ -5,7 +5,7 @@
 <template>
   <!-- Хедер -->
   <header>
-    <h3>R4ndw0rd</h3>
+    <h3 ref="logo">R4ndw0rd</h3>
   </header>
   <!-- Корневой узел Vue -->
   <div id="app">
@@ -29,7 +29,7 @@
       </button>
       <!-- Чекбар для настройки характеристик генерируемого пароля -->
       <section class="check-bar">
-        <h4>User Settings</h4>
+        <h5>User Settings</h5>
         <!-- Инпут для регулирования длинны пароля -->
         <div class="checkbox">
           <input type="number" v-model.number="length" min="4" max="32" />
@@ -138,6 +138,15 @@ export default {
         ease: "power2.out",
       }
     );
+    // GSAP анимация логотипа
+    const logo = this.$refs.logo;
+
+    gsap.from(logo, {
+      duration: 1,
+      opacity: 0,
+      x: -50,
+      ease: "power2.out",
+    });
   },
 };
 </script>
@@ -149,7 +158,7 @@ export default {
 // Глобальные стилизация
 #app {
   min-height: 100vh;
-  background: linear-gradient(90deg, #567599, #1f2e4b);
+  background: linear-gradient(90deg, #7eb0d7, #0c3c98);
   font-family: "Ubuntu Mono", monospace;
 }
 
@@ -157,7 +166,7 @@ export default {
 .wrapper {
   display: grid;
   grid-template-columns: repeat(1, minmax(375px, 800px));
-  grid-template-rows: 25vh 18vh 6vh 50vh;
+  grid-template-rows: 21vh 17vh 6vh 52vh;
   justify-content: center;
   align-items: center;
   justify-items: center;
@@ -169,8 +178,8 @@ export default {
 
 // Cтилизация кнопки
 .create-btn {
-  width: 15rem;
-  height: 3rem;
+  width: max-content;
+  height: max-content;
 
   background: white;
 
@@ -327,7 +336,7 @@ footer {
   }
 
   h1 {
-    font-size: 2.4rem !important;
+    font-size: 2.1rem !important;
     font-weight: 700 !important;
     padding: 10px;
   }
@@ -336,10 +345,23 @@ footer {
 // Адаптив для мобильных устройств
 @media screen and (max-width: 510px) {
   h1 {
-    font-size: 2.1rem !important;
+    font-size: 1.6rem !important;
     font-weight: 700 !important;
   }
+
+  h3 {
+    font-size: 1.1rem !important;
+    font-weight: 700 !important;
+  }
+
+  .password-box {
+    img {
+      max-width: 1rem;
+    }
+  }
+  
+  .checkbox {
+    padding: 6px;
+  }
 }
-
-
 </style>
