@@ -14,8 +14,8 @@ h2 {
 }
 
 h3 {
-  font-size: 1.75rem;
-  font-weight: 700;
+  font-size: 1.75rem !important;
+  font-weight: 700 !important;
   color: white;
 }
 
