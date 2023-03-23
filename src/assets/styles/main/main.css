@@ -1,13 +1,13 @@
 #app {
   min-height: 100vh;
-  background: linear-gradient(90deg, #7eb0d7, #0c3c98);
+  background: linear-gradient(90deg, #23379a, #09133c);
   font-family: "Ubuntu Mono", monospace;
 }
 
 .wrapper {
   display: grid;
   grid-template-columns: repeat(1, minmax(375px, 800px));
-  grid-template-rows: 21vh 17vh 6vh 52vh;
+  grid-template-rows: 23vh 17vh 6vh 52vh;
   justify-content: center;
   align-items: center;
   justify-items: center;
@@ -22,7 +22,6 @@
   height: -moz-max-content;
   height: max-content;
   background: white;
-  box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.2);
   border: none;
   border-radius: 20px;
   cursor: pointer;
@@ -37,7 +36,6 @@
   width: 40rem;
   height: 100px;
   background: white;
-  box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   outline: none;
   border: none;
@@ -71,7 +69,6 @@
   height: -moz-max-content;
   height: max-content;
   padding: 12px;
-  box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.2);
 }
 .checkbox h6 {
   color: black;
@@ -114,21 +111,13 @@
   transform: scale(1.2);
 }
 
-header {
-  display: grid;
-  grid-auto-flow: column;
-  align-items: center;
-  justify-items: center;
-  background: black;
-}
-
 footer {
   display: grid;
   grid-auto-flow: row;
   align-items: center;
   justify-items: start;
   row-gap: 10px;
-  background: black;
+  background: #0A0A0A;
   padding-top: 3vh;
   padding-bottom: 3vh;
   padding-left: 2vw;

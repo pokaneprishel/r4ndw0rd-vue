@@ -3,10 +3,6 @@
 
 <!-- Верстка приложения -->
 <template>
-  <!-- Хедер -->
-  <header>
-    <h3 ref="logo">R4ndw0rd</h3>
-  </header>
   <!-- Корневой узел Vue -->
   <div id="app">
     <!-- Сетка приложения -->
@@ -55,6 +51,7 @@
   </div>
   <!-- Футер -->
   <footer>
+    <h3 ref="logo">R4ndw0rd</h3>
     <h5>Contacts</h5>
     <a target="_blank" href="https://t.me/pokaneprishel"><h6>Telegram</h6></a>
     <a target="_blank" href="https://github.com/pokaneprishel"
